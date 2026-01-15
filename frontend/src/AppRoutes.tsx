@@ -1,14 +1,15 @@
 import React from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { RootState } from './store/store'
+import type { RootState } from './store/store'
 import Layout from './components/layout/Layout'
 import ProtectedRoute from './components/auth/ProtectedRoute'
 
 // Pages
+import AuthPage from './components/auth/AuthPage'
 import Home from './pages/Home'
 import Login from './pages/Login'
-import Register from './pages/Register'
+import Register from './pages/Register' 
 
 // Client Pages
 import ClientDashboard from './pages/client/ClientDashboard'
@@ -32,7 +33,8 @@ const AppRoutes: React.FC = () => {
   return (
     <Routes>
       {/* Public Routes */}
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<AuthPage />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
 
