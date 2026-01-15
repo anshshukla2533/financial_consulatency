@@ -1,16 +1,17 @@
 export interface ChatMessage {
-  id: string;
-  senderId: string;
-  receiverId: string;
-  content: string;
-  type: 'text' | 'file' | 'image';
-  timestamp: Date;
-  read: boolean;
+  id: string
+  itr_request_id: string
+  sender_id: string
+  receiver_id: string
+  message: string
+  attachment_url?: string
+  is_read: boolean
+  created_at: string
 }
 
-export interface ChatRoom {
-  id: string;
-  participants: string[];
-  lastMessage?: ChatMessage;
-  createdAt: Date;
+export interface ChatUser {
+  id: string
+  full_name: string
+  user_type: UserType
+  profile_image_url?: string
 }

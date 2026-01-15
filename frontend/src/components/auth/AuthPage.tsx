@@ -11,7 +11,7 @@ const AuthPage: React.FC = () => {
     <div className="auth-root">
       <div className="auth-card left-panel">
         <div className="brand">
-          <div className="brand-logo">FXNX</div>
+          <div className="brand-logo">Finboro</div>
           <h1>Get started with us</h1>
           <p className="muted">Complete these easy steps to register your account.</p>
         </div>
@@ -36,7 +36,7 @@ const AuthPage: React.FC = () => {
           <div className="step">
             <div className="step-icon">🎉</div>
             <div className="step-body">
-              <div className="step-title">Start trading with Fnx</div>
+              <div className="step-title">Start trading with Finboro</div>
               <div className="step-muted">Complete these easy steps to register your account.</div>
             </div>
           </div>
@@ -44,7 +44,7 @@ const AuthPage: React.FC = () => {
       </div>
 
       <div className="auth-card right-panel">
-        <h2>Sign in to FXNX</h2>
+        <h2>Sign in to Finboro</h2>
         <p className="muted small">Enter your data to Sign in your account.</p>
 
         <div className="socials">
